@@ -1,0 +1,15 @@
+
+modules:
+module Debug {
+    native public print(data: bytearray);
+}
+
+script:
+import 0x0.Debug;
+main() {
+    let input: bytearray;
+    let r: bool;
+    input = b"68656c6c6f2c776f726c646464646868686864";
+    Debug.print(copy(input));
+    return;
+}
